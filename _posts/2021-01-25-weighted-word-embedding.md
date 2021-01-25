@@ -11,7 +11,11 @@ We just had a long Christmas vacation. It's time to get back to study mode! Toda
 
 # Load the Dataset
 
-First things first, download IMDb dataset from HuggingFace's [Datasets](https://github.com/huggingface/datasets) library: `dataset = load_dataset("imdb")`
+First things first, download IMDb dataset from HuggingFace's [Datasets](https://github.com/huggingface/datasets) library: 
+
+```python
+dataset = load_dataset("imdb")
+```
 
 ```python
 def dataset_to_dataframe(dataset):
