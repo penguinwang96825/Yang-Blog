@@ -2,8 +2,9 @@
 layout: post
 title: Weighted Word Embedding
 subtitle: Weighted Word Embedding for Downstream NLP Tasks
-cover-img: /assets/img/falloxbow-1058032.jpg
-share-img: /assets/img/falloxbow-1058032.jpg
+cover-img: /assets/img/2021-01-25-weighted-word-embedding/falloxbow-1058032.jpg
+share-img: /assets/img/2021-01-25-weighted-word-embedding/falloxbow-1058032.jpg
+thumbnail-img: /assets/img/2021-01-25-weighted-word-embedding/word2vec.jpg
 readtime: true
 show-avatar: false
 tags: [Python, NLP, Embedding, Word2Vec, GloVe, FastText]
@@ -503,7 +504,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![pca](/assets/img/pca.png)
+![pca](/assets/img/2021-01-25-weighted-word-embedding/pca.png)
 
 # Perfomance
 
@@ -518,7 +519,7 @@ plt.boxplot([c[1] for c in cv_list], labels=[c[0] for c in cv_list], showmeans=T
 plt.show()
 ```
 
-![performance](/assets/img/performance.png)
+![performance](/assets/img/2021-01-25-weighted-word-embedding/performance.png)
 
 # Conclusion
 

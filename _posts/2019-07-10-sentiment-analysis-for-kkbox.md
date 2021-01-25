@@ -3,9 +3,12 @@ layout: post
 title: Sentiment Analysis for KKBOX
 subtitle: Text Classification for UtaPass & KKBOX Reviews
 gh-repo: penguinwang96825/Text-Classifier-for-UtaPass-and-KKBOX
-cover-img: /assets/img/piano-1638633.png
+cover-img: /assets/img/2019-07-10-sentiment-analysis-for-kkbox/piano-1638633.png
+thumbnail-img: /assets/img/2019-07-10-sentiment-analysis-for-kkbox/kkbox.png
 gh-badge: [star, fork, follow]
 tags: [Python, NLP, KKBOX, Sentiment Analysis, UtaPass]
+readtime: true
+show-avatar: false
 comments: true
 ---
 

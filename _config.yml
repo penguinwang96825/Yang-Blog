@@ -33,6 +33,10 @@ round-avatar: true
 # then specify the following parameter
 #title-img: /path/to/image
 
+# Cloudflare settings
+url: https://www.yangwang.ml   # with the https protocol
+enforce_ssl: www.yangwang.ml    # without any protocol
+
 
 # --- Footer social media links --- #
 

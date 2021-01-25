@@ -3,7 +3,10 @@ layout: post
 title: Set Up Anaconda for Python
 subtitle: The World's Most Popular Data Science Platform
 gh-repo: penguinwang96825/Text-Classifier-for-UtaPass-and-KKBOX
-cover-img: /assets/img/anaconda.png
+cover-img: /assets/img/2020-12-31-conda-environment-setup/cover.jpg
+thumbnail-img: /assets/img/2020-12-31-conda-environment-setup/anaconda.png
+readtime: true
+show-avatar: false
 tags: [Python, Conda]
 comments: true
 ---
