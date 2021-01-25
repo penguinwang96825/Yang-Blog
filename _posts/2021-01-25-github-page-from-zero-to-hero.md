@@ -37,6 +37,22 @@ cd <repo_name>
 
 To add pages to your site, you can either write a markdown file (`.md`) or you can write an HTML file (`.html`). Files you create inside the `_posts` directory will be treated as blog entries. Note the format of the blog post files - they must follow the naming convention of `YEAR-MONTH-DAY-title.md`. After you successfully add your own post, you can delete the existing files inside `_posts` to remove the sample posts.
 
+## Write LaTeX in your Post
+
+If you want to display math equations, you have to enable LaTeX support in markdown. Make sure you add this script to the `<head>` in `_includes` folder:
+
+{% highlight javascript linenos %}
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    inlineMath: [['$','$']]
+  }
+});
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
+{% endhighlight %}
+
 # Get Free Domain
 
 ## Freenom

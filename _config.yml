@@ -17,6 +17,7 @@ navbar-links:
   About Me: "aboutme" # "CS Student / NLP Enthusiast / Tireless Coder"
   Resources:
     - My GitHub: "https://github.com/penguinwang96825"
+    - My Medium: "https://penguinwang.medium.com/"
     - My RPubs: "https://rpubs.com/penguinwang"
   Author's home: "https://github.com/penguinwang96825"
 
@@ -50,7 +51,7 @@ social-network-links:
 # patreon: DeanAttali
 # youtube: c/daattali
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: "https://www.linkedin.com/in/yang-wang-33a007167/"
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -113,12 +114,12 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-#navbar-img: "/assets/img/bgimage.png"
-#footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
+# navbar-img: "/assets/img/bgimage.png"
+# footer-img: "/assets/img/home.jpg"
+# page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-#mobile-theme-col: "#0085A1"
+mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 #site-css:
@@ -194,7 +195,7 @@ timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
+paginate: 10
 
 kramdown:
   input: GFM
