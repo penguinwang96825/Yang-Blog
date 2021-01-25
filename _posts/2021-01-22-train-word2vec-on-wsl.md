@@ -6,7 +6,7 @@ cover-img: /assets/img/2021-01-22-train-word2vec-on-wsl/michael.jpg
 thumbnail-img: /assets/img/2021-01-22-train-word2vec-on-wsl/CBOW_eta_Skipgram.png
 readtime: true
 show-avatar: false
-tags: [Python, Conda]
+tags: [WSL, NLP, Ubuntu]
 comments: true
 ---
 
