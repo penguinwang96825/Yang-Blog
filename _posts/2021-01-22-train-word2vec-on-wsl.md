@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Train Wrod2Vec Model on WSL
-subtitle: Train Wrod2Vec Model on WSL
+title: Train Word2Vec Model on WSL
+subtitle: Train Word2Vec Model on WSL
 cover-img: /assets/img/2021-01-22-train-word2vec-on-wsl/michael.jpg
 thumbnail-img: /assets/img/2021-01-22-train-word2vec-on-wsl/CBOW_eta_Skipgram.png
 readtime: true
