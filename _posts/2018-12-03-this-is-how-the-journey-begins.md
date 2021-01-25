@@ -3,6 +3,8 @@ layout: post
 title: This is How the Journey Begins
 subtitle: My Journey After Graduation
 cover-img: /assets/img/sliderMain.jpg
+readtime: true
+show-avatar: false
 tags: [Master, NAIST, Sheffield]
 comments: true
 ---

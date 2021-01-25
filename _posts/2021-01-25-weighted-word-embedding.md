@@ -4,6 +4,8 @@ title: Weighted Word Embedding
 subtitle: Weighted Word Embedding for Downstream NLP Tasks
 cover-img: /assets/img/falloxbow-1058032.jpg
 share-img: /assets/img/falloxbow-1058032.jpg
+readtime: true
+show-avatar: false
 tags: [Python, NLP, Embedding, Word2Vec, GloVe, FastText]
 ---
 
@@ -15,9 +17,7 @@ First things first, download IMDb dataset from HuggingFace's [Datasets](https://
 
 ```python
 dataset = load_dataset("imdb")
-```
 
-```python
 def dataset_to_dataframe(dataset):
     X_train, y_train = dataset["train"]["text"], dataset["train"]["label"]
     X_test, y_test = dataset["test"]["text"], dataset["test"]["label"]
@@ -135,7 +135,7 @@ ft_model = KeyedVectors.load_word2vec_format("cc.en.300.bin", binary=True)
 
 # Weighted Method
 
-The aim of this section is to construct sentence embeddings, obtained from word embeddings. If the sentence s consists of words $w_{1}$, ..., $w_{n}$, let's define an embedding vector $Emb_{s}(s) \in \mathbb{R}^d$ for some $d>0$. We can compute sentence embedding from the embeddings of words $w_{i}$, let's call them $Emb_{w}(w_{i})$, so that $Emb_{s}(s)$ is a linear combination of $Emb_{w}(w_{i})$ and has the same dimensionality $d$: 
+The aim of this section is to construct sentence embeddings, obtained from word embeddings. If the sentence $s$ consists of words $w_{1}$, ..., $w_{n}$, let's define an embedding vector $Emb_{s}(s) \in \mathbb{R}^d$ for some $d>0$. We can compute sentence embedding from the embeddings of words $w_{i}$, let's call them $Emb_{w}(w_{i})$, so that $Emb_{s}(s)$ is a linear combination of $Emb_{w}(w_{i})$ and has the same dimensionality $d$: 
 
 <div>
 	<span>
