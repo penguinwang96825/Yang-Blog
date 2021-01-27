@@ -167,3 +167,5 @@ Give this a plot:
 ![](/assets/img/2019-06-11-categorising-song-genre-by-analysing-lyrics/first.png)
 
 LinearSVC and LogisticRegression perform better than RandomForest, with LinearSVC having a slight advantage with a median accuracy of around 42%.
+
+I also did the same thing for word2vec-mean, word2vec-tfidf, word2vec-sif, glove-mean, glove-tfidf, glove-sif, fasttext-mean, fasttext-tfidf, and fasttext-sif.

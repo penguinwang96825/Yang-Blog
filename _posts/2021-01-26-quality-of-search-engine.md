@@ -262,7 +262,7 @@ PageRank is a powerful algorithm and has a wide application, such as ranking the
 ## References
 
 1. [[link](https://www.sciencedirect.com/science/article/abs/pii/S016975529800110X)] S. Brin and L. Page, The anatomy of a large-scale hypertextual web search engine
-2. [[link](https://projecteuclid.org/download/pdf_1/euclid.involve/1513733537)] An Application of Google's PageRank to NFL Rankings
-3. [[link](https://web.stanford.edu/class/msande233/handouts/lecture8.pdf)] Laurie Zack, Ron Lamb and Sarah Ball, Applications of PageRank to Recommendation Systems
+2. [[link](https://projecteuclid.org/download/pdf_1/euclid.involve/1513733537)] Laurie Zack, Ron Lamb and Sarah Ball, An Application of Google's PageRank to NFL Rankings
+3. [[link](https://web.stanford.edu/class/msande233/handouts/lecture8.pdf)] Ashish Goel, Applications of PageRank to Recommendation Systems
 4. [[link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178458)] Clive B. Beggs, A Novel Application of PageRank and User Preference Algorithms for Assessing the Relative Performance of Track Athletes in Competition
 5. [[link](https://www.hindawi.com/journals/ijta/2019/8612021/)] Shahram Payandeh and Eddie Chiu, Application of Modified PageRank Algorithm for Anomaly Detection in Movements of Older Adults

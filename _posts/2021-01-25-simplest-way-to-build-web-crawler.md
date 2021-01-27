@@ -137,6 +137,24 @@ data = pd.DataFrame(result, columns=columns)
 
 ![](/assets/img/2021-01-26-simplest-way-to-build-web-crawler/pd.png)
 
+Save it to csv file: 
+
+{% highlight python linenos %}
+data.to_csv("volley.csv", index=False)
+{% endhighlight %}
+
+Or save it to database (I suppose you have a `<database_name>.db` file in your working directory).
+
+{% highlight python linenos %}
+def save_to_database(data, db_name="volley.db"):
+    database_path = f'sqlite:///data/{db_name}'
+    engine = create_engine(database_path, echo=False)
+    data.to_sql("volley", con=engine, if_exists='replace')
+    engine.dispose()
+
+save_to_database(data, db_name="volley.db")
+{% endhighlight %}
+
 ## Some Advance Tips
 
 ### Fake a Browser Visit
@@ -206,6 +224,7 @@ class PyCrawler:
 
 crawler = PyCrawler(pages=10)
 data = crawler.run()
+data.to_csv("volley.csv", index=False)
 {% endhighlight %}
 
 # Conclusion
