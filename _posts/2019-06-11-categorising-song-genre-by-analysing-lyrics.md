@@ -147,16 +147,6 @@ We will benchmark the following three models:
 
 I also built same models for 9 different weighted embedding method: word2vec-mean, word2vec-tfidf, word2vec-sif, glove-mean, glove-tfidf, glove-sif, fasttext-mean, fasttext-tfidf, and fasttext-sif. Below is the pseudocode for creating `pd.DataFrame` (weights: "mean", "tfidf", "sif", embedding: "word2vec", "glove", "fasttext").
 
-{% pseudocode %}
-Function getCvDataFrame(feature, label, models)
-    entries <- list
-    For Each model
-        accuracies <- cross_val_score(model, feature, label)
-        For Each foldIndex, acc
-            entries <- (modelName, foldIndex, embeddingMethod, weightMethod)
-    cvDataFrame pandasDataFrame(entries)
-{% endpseudocode %}
-
 After calculating for all the cv dataframe, you will get something like the following:
 
 ![](/assets/img/2019-06-11-categorising-song-genre-by-analysing-lyrics/cvtable.png)
