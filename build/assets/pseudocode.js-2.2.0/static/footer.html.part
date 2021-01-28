@@ -1,0 +1,25 @@
+    <script>
+        pseudocode.renderElement(document.getElementById("test-basics"),
+                                 {
+                                     lineNumber: false,
+                                     noEnd: true
+                                 });
+        pseudocode.renderElement(document.getElementById("test-codes"),
+                                 {
+                                     lineNumber: false,
+                                     noEnd: false
+                                 });
+        pseudocode.renderElement(document.getElementById("test-examples"),
+                                 {
+                                     lineNumber: true,
+                                     noEnd: false
+                                 });
+        pseudocode.renderElement(document.getElementById("test-examples-custom-title"),
+                                 {
+                                     lineNumber: true,
+                                     noEnd: false,
+                                     titlePrefix: "My pretty Algorithm"
+                                 });                                   
+    </script>
+</body>
+</html>

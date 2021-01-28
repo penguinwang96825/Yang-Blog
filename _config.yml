@@ -32,7 +32,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+title-img: "/assets/img/logo.png"
 
 # Cloudflare settings
 url: https://www.yangwang.ml   # with the https protocol
@@ -115,8 +115,8 @@ footer-link-col: "#404040"
 # instead of colour
 
 # navbar-img: "/assets/img/bgimage.png"
-# footer-img: "/assets/img/home.jpg"
-# page-img: "/assets/img/bgimage.png"
+# footer-img: "/assets/img/casey-horner.jpg"
+# page-img: "/assets/img/casey-horner.jpg"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
 mobile-theme-col: "#0085A1"
@@ -230,3 +230,4 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-pseudocode-b

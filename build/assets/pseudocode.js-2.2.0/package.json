@@ -1,0 +1,30 @@
+{
+    "name": "pseudocode",
+    "version": "2.2.0",
+    "author": {
+        "name": "Saswat Padhi",
+        "email": "saswat.sourav@gmail.com",
+        "url": "https://saswatpadhi.github.io/"
+    },
+    "description": "Beautiful pseudocode for the Web",
+    "main": "pseudocode.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/SaswatPadhi/pseudocode.js"
+    },
+    "files": [
+        "pseudocode.js",
+        "src/",
+        "build/pseudocode.min.css",
+        "build/pseudocode.min.js"
+    ],
+    "devDependencies": {
+        "browserify": "^13.3.0",
+        "clean-css-cli": "^4.0.0",
+        "eslint": "^7.0.0",
+        "katex": "^0.8.0",
+        "uglify-js": "^3.6.0",
+        "watchify": "^3.9.0"
+    },
+    "license": "MIT"
+}
