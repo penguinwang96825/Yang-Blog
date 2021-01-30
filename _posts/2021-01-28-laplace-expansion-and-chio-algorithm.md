@@ -134,4 +134,5 @@ Clearly, Chiò Condensation Method is much quicker than Laplace Expansion Method
 2. https://www.codeformech.com/determinant-linear-algebra-using-python/
 3. https://en.wikipedia.org/wiki/Laplace_expansion
 4. https://stackoverflow.com/questions/16636858/complexity-computation-of-a-determinant-recursive-algorithm
-5. Fuller, L. E., & Logan, J. D. On the Evaluation of Determinants by Chiò Method, 1975
+5. https://www.youtube.com/watch?v=UlWcofkUDDU.
+6. Fuller, L. E., & Logan, J. D. On the Evaluation of Determinants by Chiò Method, 1975
