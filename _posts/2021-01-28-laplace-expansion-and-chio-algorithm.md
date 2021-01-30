@@ -18,7 +18,7 @@ In 1853 Felice (Félix) Chiò (1813–1871) published his short "Mémoire sur le
 
 # Laplace Expansion Method
 
-In linear algebra, the Laplace expansion, named after Pierre-Simon Laplace, also called cofactor expansion, is an expression for the determinant $B$ of an $n \times n$ matrix $A$ that is a weighted sum of the determinants of $n$ sub-matrices (or minors) of $B$, each of size $(n − 1) \times (n − 1)$. The $i$, $j$ cofactor of the matrix $A$ is the scalar $C_{ij}$ defined by $C_{ij}=(-1)^{i+j}M_{ij}$, where $M_{ij}$ is the $i$, $j$ minor of $A$, that is, the determinant of the $(n − 1) \times (n − 1)$ matrix that results from deleting the $i$-th row and the $j$-th column of $A$.
+In linear algebra, the Laplace expansion, named after Pierre-Simon Laplace, also called cofactor expansion, is an expression for the determinant of an $n \times n$ matrix $A$ that is a weighted sum of the determinants of $n$ sub-matrices (or minors) of $M$, each of size $(n − 1) \times (n − 1)$. The $i$, $j$ cofactor of the matrix $A$ is the scalar $C_{ij}$ defined by $C_{ij}=(-1)^{i+j}M_{ij}$, where $M_{ij}$ is the $i$, $j$ minor of $A$, that is, the determinant of the $(n − 1) \times (n − 1)$ matrix that results from deleting the $i$-th row and the $j$-th column of $A$.
 
 ```python
 class LaplaceDeterminants:
