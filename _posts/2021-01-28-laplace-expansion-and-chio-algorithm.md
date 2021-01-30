@@ -124,6 +124,8 @@ def test_scipy(n_samples=50000):
 
 ![](/assets/img/2021-01-28-laplace-expansion-and-chio-algorithm/perf2.png)
 
+Quantstart has implemented an LU Decomposition directly over [here](https://www.quantstart.com/articles/LU-Decomposition-in-Python-and-NumPy/), which does not rely on any external libraries.
+
 # Conclusion
 
 Clearly, Chiò Condensation Method is much quicker than Laplace Expansion Method by minors, which yeilds complexity computation of $O(n!)$. As an alternative method for hand-calculating determinants, therefore, Chiò's method is quite effective. For numerical computations of large determinants on a computer, however, Chiò's method is not so efficient as other methods such as, for example, Gaussian elimination, because of certain difficulties with round-off errors. In addition, Chiò's method requires approximately $\frac{2}{3}n^3$ multiplications, whereas Gaussian elimination requires approximately $\frac{1}{3}n^3$. 
