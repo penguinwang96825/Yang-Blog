@@ -115,25 +115,25 @@ We also define a power method to computeeigen values and eigenvectors.
 
 ```matlab
 function [V, D] = power(A, iter)
-% Power Method
-[m, n] = size(A);
-% Random number generator
-rng(1)
-% Initial vector
-x0 = randn(n, 1);
-x = x0;
-for j = 1:iter
+    % Power Method
+    [m, n] = size(A);
+    % Random number generator
+    rng(1)
+    % Initial vector
+    x0 = randn(n, 1);
+    x = x0;
+    for j = 1:iter
+        u = x / norm(x);
+        x = A * u;
+        % Rayleigh Quotient
+        lam = u' * x;
+        L(j) = lam;
+    end
+    % Eigenvalue D
+    D = L(end);
     u = x / norm(x);
-    x = A * u;
-    % Rayleigh Quotient
-    lam = u' * x;
-    L(j) = lam;
-end
-% Eigenvalue D
-D = L(end);
-u = x / norm(x);
-% Eigenvector V
-V = u;
+    % Eigenvector V
+    V = u;
 ```
 
 We use the above function to find the dominant eigenvector $p$.
