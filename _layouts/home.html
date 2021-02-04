@@ -7,7 +7,19 @@ layout: page
 {% assign posts = paginator.posts | default: site.posts %}
 
 <div class="container">
-  <div class="row no-gutters d-flex">
+
+  <div id="search-demo-container">
+    <div class="row" id="search-box">
+      <form class="form-inline" id="site_search">
+        <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search" id="search-input" name="query" size="40">
+      </form>
+    </div>
+    <div class="row" id="search-results">
+      <div id="results-container"></div>
+    </div>
+  </div>
+
+  <div class="row no-gutters d-flex" id="blog-posts">
     <div class="posts-list col-12 col-sm-6 col-md-10 blog-posts-wrap">
       {% for post in posts %}
       <article class="post-preview">
@@ -92,19 +104,6 @@ layout: page
 
     </div>
 
-    <div class="col-6 col-md-2 blog-sidebar-wrapper col-md-offset-1">
-      <aside id="secondary" class="blog-sidebar" role="complementary">
-        <div id="recent-posts-2" class="widget widget_recent_entries">
-          <h5>Recent Posts</h5>
-          <ul>
-            {% for post in posts %}
-            <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </aside>
-    </div>
-
     {% if paginator.total_pages > 1 %}
     <ul class="col-md-10 pagination main-pager">
       {% if paginator.previous_page %}
@@ -119,8 +118,6 @@ layout: page
       {% endif %}
     </ul>
     {% endif %}
-
-    
 
   </div>
 
