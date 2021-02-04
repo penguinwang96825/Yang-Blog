@@ -7,8 +7,8 @@ layout: page
 {% assign posts = paginator.posts | default: site.posts %}
 
 <div class="container">
-  <div>
-    <div class="posts-list col-md-12 blog-posts-wrap">
+  <div class="row no-gutters d-flex">
+    <div class="posts-list col-12 col-sm-6 col-md-10 blog-posts-wrap">
       {% for post in posts %}
       <article class="post-preview">
 
@@ -92,8 +92,21 @@ layout: page
 
     </div>
 
+    <div class="col-6 col-md-2 blog-sidebar-wrapper col-md-offset-1">
+      <aside id="secondary" class="blog-sidebar" role="complementary">
+        <div id="recent-posts-2" class="widget widget_recent_entries">
+          <h5>Recent Posts</h5>
+          <ul>
+            {% for post in posts %}
+            <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </aside>
+    </div>
+
     {% if paginator.total_pages > 1 %}
-    <ul class="pagination main-pager">
+    <ul class="col-md-10 pagination main-pager">
       {% if paginator.previous_page %}
       <li class="page-item previous">
         <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">&larr; Newer Posts</a>
@@ -107,20 +120,23 @@ layout: page
     </ul>
     {% endif %}
 
-  </div>
-  
+    
 
-  <div class="col-md-10 blog-sidebar-wrapper col-md-offset-1">
-      <aside id="secondary" class="blog-sidebar" role="complementary">
-        <div id="recent-posts-2" class="widget widget_recent_entries">
-          <h5>Recent Posts</h5>
-          <ul>
-            {% for post in posts %}
-            <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </aside>
-    </div>
+  </div>
 
 </div>
+
+<script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.js"></script>
+
+<script>
+  window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ site.baseurl }}/search.json',
+    searchResultTemplate: '<div><a href="{url}?query={query}" title="{desc}">{title}</a></div>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: true,
+    exclude: ['Welcome']
+  })
+</script>

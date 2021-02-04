@@ -30,7 +30,13 @@
           </li>
         {%- endif -%}
       {%- endfor -%}
-    </ul>
+
+      <form class="form-inline" id="site_search">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
+        <div id="results-container"></div>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="collapse" data-target=".nav-collapse">Search</button>
+      </form>
+
   </div>
 
   {% if site.navbar-extra %}
