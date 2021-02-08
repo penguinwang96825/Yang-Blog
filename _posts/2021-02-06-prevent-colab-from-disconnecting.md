@@ -6,7 +6,7 @@ cover-img: /assets/img/2021-02-06-prevent-colab-from-disconnecting/kai-wenzel.jp
 thumbnail-img: /assets/img/2021-02-06-prevent-colab-from-disconnecting/colab.png
 readtime: true
 show-avatar: false
-tags: [Python]
+tags: [Colab, JavaScript]
 comments: true
 ---
 

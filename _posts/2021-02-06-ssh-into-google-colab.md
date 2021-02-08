@@ -6,7 +6,7 @@ cover-img: /assets/img/2021-02-06-ssh-into-google-colab/michael-dziedzic.jpg
 thumbnail-img: /assets/img/2021-02-06-ssh-into-google-colab/ssh-keys-cover-image.jpg
 readtime: true
 show-avatar: false
-tags: [Python]
+tags: [SSH, Colab]
 comments: true
 ---
 
