@@ -88,7 +88,9 @@ What happens if we sample the signal at a frequency that is lower that the Nyqui
 * Typical values: 256 ~ 8192.
 
 Formula for duration of a frame: 
+
 $$d_f = \frac{1}{s_r} \cdot K$$
+
 where $d_f$ is duration of a frame, $s_r$ is sample rate, and $K$ is the frame size. 
 
 ## Spectral Leakage
@@ -106,7 +108,9 @@ where $d_f$ is duration of a frame, $s_r$ is sample rate, and $K$ is the frame s
 ## Hann Window
 
 This function is a member of both the cosine-sum and power-of-sine families. The end points of the Hann window just touch zero.
+
 $$ w(k) = 0.5 \cdot (1-cos(\frac{2 \pi k}{K-1})), k = 1, \cdots, K $$
+
 At both endpoints will touch zero, which is a problem losing a signal. The solution to this is to overlap the frames.
 
 ### Bit Depth & Bit Rate
