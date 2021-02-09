@@ -692,3 +692,4 @@ In the end, we got a accuracy score of 50.7% on the test dataset. For your infor
 5. http://www2.egr.uh.edu/~glover/applets/Sampling/Sampling.html
 6. https://www.dewresearch.com/products/163-derivation-of-the-dft
 7. https://teropa.info/harmonics-explorer/
+8. https://towardsdatascience.com/extract-features-of-music-75a3f9bc265d
