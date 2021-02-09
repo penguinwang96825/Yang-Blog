@@ -48,3 +48,19 @@
   left: initial;
   font-size: 14px;
 }
+
+#search-box {
+  display: flex;
+  justify-content: center;
+}
+
+#search-results {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#blog-posts {
+  display: flex;
+  justify-content: center;
+}

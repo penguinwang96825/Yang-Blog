@@ -6,7 +6,7 @@ cover-img: /assets/img/2021-01-29-matrix-decomposition/kelly-sikkema.jpg
 thumbnail-img: /assets/img/2021-01-29-matrix-decomposition/what-is-decomposition.png
 readtime: true
 show-avatar: false
-tags: [Python, MATLAB, Mathematics, LinearAlgebra]
+tags: [Python, MATLAB, LinearAlgebra]
 comments: true
 ---
 
