@@ -6,9 +6,9 @@ layout: page
 
 {% assign posts = paginator.posts | default: site.posts %}
 
-<div class="container">
-  <div class="row no-gutters d-flex">
-    <div class="posts-list col-12 col-sm-6 col-md-10 blog-posts-wrap">
+<div class="row no-gutters">
+  <div style="display: flex; flex-direction:row-reverse;">
+    <div style="width:800px">
       {% for post in posts %}
       <article class="post-preview">
 
@@ -92,7 +92,7 @@ layout: page
 
     </div>
 
-    <div class="col-6 col-md-2 blog-sidebar-wrapper col-md-offset-1">
+    <div style="width: 400px; margin-top: 50px">
       <aside id="secondary" class="blog-sidebar" role="complementary">
         <div id="recent-posts-2" class="widget widget_recent_entries">
           <h5>Recent Posts</h5>
@@ -104,6 +104,7 @@ layout: page
         </div>
       </aside>
     </div>
+  </div>
 
     {% if paginator.total_pages > 1 %}
     <ul class="col-md-10 pagination main-pager">
@@ -122,7 +123,6 @@ layout: page
 
     
 
-  </div>
 
 </div>
 
