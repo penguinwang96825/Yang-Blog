@@ -6,9 +6,9 @@ layout: page
 
 {% assign posts = paginator.posts | default: site.posts %}
 
-<div class="row no-gutters">
-  <div style="display: flex; flex-direction:row-reverse;">
-    <div style="width:800px">
+<div class="row no-gutters" style="display: flex; justify-content: center;">
+  <div>
+    <div style="width:800px;">
       {% for post in posts %}
       <article class="post-preview">
 
@@ -92,18 +92,18 @@ layout: page
 
     </div>
 
-    <div style="width: 400px; margin-top: 50px">
+    <!-- <div style="width: 400px; margin-top: 50px;">
       <aside id="secondary" class="blog-sidebar" role="complementary">
         <div id="recent-posts-2" class="widget widget_recent_entries">
           <h5>Recent Posts</h5>
           <ul>
             {% for post in posts %}
-            <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
+            <div><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></div>
             {% endfor %}
           </ul>
         </div>
       </aside>
-    </div>
+    </div> -->
   </div>
 
     {% if paginator.total_pages > 1 %}
