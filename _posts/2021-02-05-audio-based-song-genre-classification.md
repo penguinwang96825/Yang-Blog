@@ -693,3 +693,5 @@ In the end, we got a accuracy score of 50.7% on the test dataset. For your infor
 6. https://www.dewresearch.com/products/163-derivation-of-the-dft
 7. https://teropa.info/harmonics-explorer/
 8. https://towardsdatascience.com/extract-features-of-music-75a3f9bc265d
+9. https://haythamfayek.com/2016/04/21/speech-processing-for-machine-learning.html
+10. https://www.kaggle.com/ilyamich/mfcc-implementation-and-tutorial
