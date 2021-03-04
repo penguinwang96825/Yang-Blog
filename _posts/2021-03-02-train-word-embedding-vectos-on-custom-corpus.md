@@ -438,7 +438,7 @@ model = fasttext.train_unsupervised('news.tokens',
                                     lr=0.05, 
                                     thread=12)
 model.save_model("news-fasttext-cbow-vectors300.bin")
-model = fasttext.load_model("news-fasttext-cbow-vectors300.bin")
+wv_fasttext_cbow = fasttext.load_model("news-fasttext-cbow-vectors300.bin")
 ```
 
 Depending on the quantity of data you have, you may want to change the parameters of the training. The `epoch` parameter controls how many times the model will loop over your data. By default, we loop over the dataset 5 times. If you dataset is extremely massive, you may want to loop over it less often. Another important parameter is the learning rate `-lr`. The higher the learning rate is, the faster the model converge to a solution but at the risk of overfitting to the dataset. The default value is `0.05` which is a good compromise. If you want to play with it we suggest to stay in the range of [0.01, 1]. Finally , fastText is multi-threaded and uses 12 threads by default. If you have less CPU cores (say 4), you can easily set the number of threads using the thread flag.
@@ -446,7 +446,7 @@ Depending on the quantity of data you have, you may want to change the parameter
 ## Printing Word Vectors
 
 ```python
-model.get_word_vector("bitcoin")
+wv_fasttext_cbow.get_word_vector("bitcoin")
 ```
 
 ---
@@ -535,7 +535,7 @@ array([-4.72412445e-02,  2.85789132e-01,  3.42660360e-02,  2.09649026e-01,
 A simple way to check the quality of a word vector is to look at its nearest neighbors. This give an intuition of the type of semantic information the vectors are able to capture.
 
 ```python
-model.get_nearest_neighbors('bitcoin')
+wv_fasttext_cbow.get_nearest_neighbors('bitcoin')
 ```
 
 ---
@@ -556,7 +556,7 @@ model.get_nearest_neighbors('bitcoin')
 Even if the word is misspell, the fasttext model can also get the correct embedding.
 
 ```python
-model.get_nearest_neighbors('bittcoin')
+wv_fasttext_cbow.get_nearest_neighbors('bittcoin')
 ```
 
 ---
