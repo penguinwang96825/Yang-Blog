@@ -15,11 +15,13 @@ author: Yang Wang
 
 navbar-links:
   About Me: "aboutme" # "CS Student / NLP Enthusiast / Tireless Coder"
-  Resources:
-    - My GitHub: "https://github.com/penguinwang96825"
-    - My Medium: "https://penguinwang.medium.com/"
-    - My RPubs: "https://rpubs.com/penguinwang"
-  Author's home: "https://github.com/penguinwang96825"
+  Medium: "https://penguinwang.medium.com/"
+  RPubs: "https://rpubs.com/penguinwang"
+  # Resources:
+  #   - My GitHub: "https://github.com/penguinwang96825"
+  #   - My Medium: "https://penguinwang.medium.com/"
+  #   - My RPubs: "https://rpubs.com/penguinwang"
+  GitHub: "https://github.com/penguinwang96825"
 
 # --- Logo --- #
 
